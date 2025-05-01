@@ -1,6 +1,46 @@
 @tailwind base;
+
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 285 75% 65%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 264 70% 35%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --ring: 285 75% 65%;
+  --scrollbar-thumb: 285 75% 65%;
+  --scrollbar-track: 240 3.7% 15.9%;
+}
+
+body {
+  @apply bg-background text-foreground;
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+.brand-logo {
+  @apply w-24 h-20 object-contain grayscale hover:grayscale-0 transition-all duration-300;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, rgba(26, 31, 44, 0.8) 0%, rgba(123, 105, 171, 0.6) 100%);
+}
+
 
 @layer base {
   :root {
